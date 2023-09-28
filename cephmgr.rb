@@ -5,11 +5,11 @@
 class Cephmgr < Formula
   desc ""
   homepage "https://github.com/blastart-repo/cephmgr"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
-    url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.2/cephmgr_0.1.2_darwin_all.tar.gz"
-    sha256 "0574ee98a3ae27a73e73c0b7dad895712d187a37fcb4b95f190eaa1558c646df"
+    url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.3/cephmgr_0.1.3_darwin_all.tar.gz"
+    sha256 "bcbba97d683cb15a667a2435b666aade5e64f39bd4ad7adef429a0662e3f5c69"
 
     def install
       bin.install "cephmgr"
@@ -18,16 +18,16 @@ class Cephmgr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.2/cephmgr_0.1.2_linux_arm64.tar.gz"
-      sha256 "ddc7247f80e4745d4fc90adaba7cf3313fccbff930762f9ff513ae28d3a123ea"
+      url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.3/cephmgr_0.1.3_linux_arm64.tar.gz"
+      sha256 "4f81e5969a66f8e9ffdfcffd8256ec78e27792ee6f78da3c244bc1d1a80941d7"
 
       def install
         bin.install "cephmgr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.2/cephmgr_0.1.2_linux_amd64.tar.gz"
-      sha256 "b6751f32960f0c62ca9815dd286cc2aa3dcbb5cbce774f31504c64eb29111ef6"
+      url "https://github.com/blastart-repo/cephmgr/releases/download/v0.1.3/cephmgr_0.1.3_linux_amd64.tar.gz"
+      sha256 "157cbcdf77bc6c44982d4c592faa22c59c27ba35155da1560cd88893f7dcd66f"
 
       def install
         bin.install "cephmgr"
