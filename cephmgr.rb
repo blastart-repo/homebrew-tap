@@ -8,7 +8,7 @@ class Cephmgr < Formula
   version "0.2.0"
 
   on_macos do
-    url "https://github.com/blastart-repo/cephmgr/releases/download/v0.2.0/cephmgr_0.2.0_darwin_all.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/blastart-repo/cephmgr/releases/download/v0.2.0/cephmgr_0.2.0_darwin_all.tar.gz"
     sha256 "3d76a994b3b510941430293bc1338c63027ad148f8797bd63df9f58fd52a5659"
 
     def install
